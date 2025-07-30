@@ -7,4 +7,5 @@ matplotlib==3.9.2
 reportlab==4.2.5
 openpyxl==3.1.5
 xlrd==2.0.1
+scipy==25.1.1
 
