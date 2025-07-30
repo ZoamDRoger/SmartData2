@@ -1,23 +1,24 @@
-# 📊 Analyse PME - Application Streamlit
+# Analyse PME - Application Streamlit
 
 Une application Streamlit complète pour l'analyse de données des petites et moyennes entreprises (PME).
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
-- **🔐 Authentification sécurisée** : Système de login/inscription avec gestion des sessions
-- **📁 Import de données** : Support des fichiers CSV et Excel
-- **🧹 Nettoyage automatique** : Traitement intelligent des données importées
-- **💡 Recommandations IA** : Génération automatique de conseils et alertes
-- **📈 Visualisations** : Graphiques interactifs avec Plotly
-- **📄 Export PDF** : Génération de rapports professionnels
-- **🎨 Interface moderne** : Design futuriste et professionnel
+- **Authentification sécurisée** : Système de login/inscription avec gestion des sessions
+- **Import de données** : Support des fichiers CSV et Excel
+- **Nettoyage automatique** : Traitement intelligent des données importées
+- **Recommandations IA** : Génération automatique de conseils et alertes
+- **Visualisations** : Graphiques interactifs avec Plotly
+- **Export PDF** : Génération de rapports professionnels
+- **telecharger données nettoyé**:telechargement des données deja nettoyées
+- **Interface moderne** : Design futuriste et professionnel
 
-## 📋 Prérequis
+##  Prérequis
 
 - Python 3.8 ou supérieur
 - pip (gestionnaire de paquets Python)
 
-## 🛠️ Installation
+## 🛠 Installation
 
 1. **Cloner ou télécharger le projet**
 
@@ -41,7 +42,7 @@ Une application Streamlit complète pour l'analyse de données des petites et mo
 4. **Accéder à l'application**
    - Ouvrez votre navigateur à l'adresse : `http://localhost:8501`
 
-## 👤 Comptes de démonstration
+##  Comptes de démonstration
 
 L'application inclut des comptes de test prêts à utiliser :
 
@@ -61,6 +62,9 @@ L'application inclut des comptes de test prêts à utiliser :
 analyse-pme/
 ├── apps.py                     # Application principale
 ├── requirements.txt            # Dépendances Python
+├── assets                      # Dossier d'image logo           
+      ├── logo.png              #image du logo
+      └── icon.png             # icon du logo                  
 ├── README.md                  # Documentation
 ├── users.json                 # Base de données utilisateurs (générée automatiquement)
 ├── frontend/
@@ -74,7 +78,7 @@ analyse-pme/
 └── visualisation.py          # Graphiques et visualisations
 ```
 
-## 🎯 Guide d'utilisation
+## Guide d'utilisation
 
 ### 1. Connexion
 
@@ -98,6 +102,7 @@ analyse-pme/
 - Onglet "Exporter" pour télécharger vos résultats
 - Export CSV des données nettoyées
 - Rapport PDF professionnel avec recommandations
+- telecharger données nettoyées
 
 ## 🔧 Fonctionnalités techniques
 
@@ -125,7 +130,7 @@ analyse-pme/
 - Dashboard d'insights
 - Métriques de qualité
 
-## 🎨 Personnalisation
+## Personnalisation
 
 ### Thème et couleurs
 
@@ -141,14 +146,14 @@ Les couleurs principales peuvent être modifiées dans `frontend/ui.py` :
 - **Recommandations personnalisées** : Étendre `utilisation/recommendation.py`
 - **Formats d'export supplémentaires** : Ajouter dans `utilisation/exportpdf.py`
 
-## 🔒 Sécurité
+## Sécurité
 
 - Mots de passe hachés avec SHA-256
 - Gestion sécurisée des sessions
 - Validation des fichiers uploadés
 - Protection contre les injections
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### Erreurs communes
 
@@ -169,7 +174,7 @@ Les couleurs principales peuvent être modifiées dans `frontend/ui.py` :
 4. **Erreur de mémoire avec gros fichiers**
    - Limitez la taille des fichiers à < 100MB
 
-## 📊 Formats de données supportés
+##  Formats de données supportés
 
 ### CSV
 
@@ -183,7 +188,7 @@ Les couleurs principales peuvent être modifiées dans `frontend/ui.py` :
 - Feuilles multiples : première feuille utilisée par défaut
 - Cellules fusionnées : gérées automatiquement
 
-## 🚀 Déploiement
+##  Déploiement
 
 ### Déploiement local
 
@@ -197,7 +202,7 @@ streamlit run apps.py --server.port 8501
 2. Connecter le repository à Streamlit Cloud
 3. Configurer les variables d'environnement si nécessaire
 
-## 📈 Performances
+## Performances
 
 ### Optimisations incluses
 
