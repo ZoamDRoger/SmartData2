@@ -34,7 +34,7 @@ def apply_custom_css():
         --success-color: #06D6A0;
         --warning-color: #FFD23F;
         --error-color: #F72585;
-        --background-color: #f5faf;
+        --background-color:#F8CFAF;
         --card-background: #FFFFFF;
         --text-primary: #1E293B;
         --text-secondary: #64748B;
