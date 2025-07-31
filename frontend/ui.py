@@ -14,7 +14,7 @@ def setup_page_config():
     """Configuration de la page Streamlit"""
     st.set_page_config(
         page_title="Analyse PME",
-        page_icon="📊",
+        page_icon="assets/icon.png",
         layout="wide",
         initial_sidebar_state="expanded"
     )
