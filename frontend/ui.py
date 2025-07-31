@@ -13,7 +13,7 @@ def get_img_as_base64(file):
 def setup_page_config():
     """Configuration de la page Streamlit"""
     st.set_page_config(
-        page_title="Analyse PME",
+        page_title="SmartDATA",
         page_icon="assets/icon.png",
         layout="wide",
         initial_sidebar_state="expanded"
