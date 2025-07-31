@@ -116,7 +116,7 @@ def show_import_page():
                         st.session_state.cleaned_data = cleaned_df
                         st.session_state.cleaning_log = log_messages
                     
-                    st.success("🎯 Nettoyage terminé !")
+                    st.success(" Nettoyage terminé !")
 
                     # --- Affichage des résultats après nettoyage ---
                     if st.session_state.cleaned_data is not None:
