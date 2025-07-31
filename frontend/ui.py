@@ -6,7 +6,7 @@ def get_img_as_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
-
+ icon_base64 = get_img_as_base64("assets/icon.png")
 
 
 
@@ -14,7 +14,7 @@ def setup_page_config():
     """Configuration de la page Streamlit"""
     st.set_page_config(
         page_title="Analyse PME",
-        page_icon="📊",
+        page_icon=f"data:image/png;base64,{icon_base64}",
         layout="wide",
         initial_sidebar_state="expanded"
     )
@@ -254,7 +254,7 @@ def create_sidebar():
         Fonctionnalités:
         - 📊 Import CSV/Excel
         - 🧹 Nettoyage automatique
-        - 💡 Recommandations IA
+        - 💡 Recommandations Intelligentes
         - 📈 Visualisations
         - 📄 Export PDF
         """)
