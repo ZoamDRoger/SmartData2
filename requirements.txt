@@ -8,4 +8,5 @@ reportlab
 openpyxl
 xlrd
 scipy
+statsmodels
 
