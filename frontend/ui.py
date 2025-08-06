@@ -237,7 +237,7 @@ def create_sidebar():
         
         # Informations sur les données
         if st.session_state.file_uploaded and st.session_state.cleaned_data is not None:
-            st.markdown("### 📊 Données chargées")
+            st.markdown("###  Données chargées")
             st.metric("Lignes", st.session_state.cleaned_data.shape[0])
             st.metric("Colonnes", st.session_state.cleaned_data.shape[1])
             st.metric("Opérations de Nettoyage", len(st.session_state.get('cleaning_log', [])))
@@ -247,16 +247,16 @@ def create_sidebar():
         st.markdown("---")
         st.markdown("### ℹ️ À propos")
         st.markdown("""
-        **Analyse PME** v1.0
+        **SMARTDATA** v1.0
         
         Plateforme d'analyse de données pour petites et moyennes entreprises.
         
         Fonctionnalités:
-        - 📊 Import CSV/Excel
+        -   Import CSV/Excel
         - 🧹 Nettoyage automatique
         - 💡 Recommandations Intelligentes
         - 📈 Visualisations
-        - 📄 Export PDF
+        - 📄 Export PDF 
         """)
     
     return selected_page
