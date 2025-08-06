@@ -60,7 +60,7 @@ def main():
 
 def show_import_page():
     """Page d'importation des données"""
-    st.markdown("## 📊 Importation des Données")
+    st.markdown("##  Importation des Données")
    
     # Upload de fichier
     uploaded_file = st.file_uploader(
@@ -105,7 +105,7 @@ def show_import_page():
                         )
 
                 # --- Bouton pour lancer le nettoyage ---
-                if st.button("🚀 Lancer le Nettoyage des Données", use_container_width=True, type="primary"):
+                if st.button(" Lancer le Nettoyage des Données", use_container_width=True, type="primary"):
                     with st.spinner("Nettoyage des données en cours..."):
                         cleaned_df, log_messages = clean_data(
                             st.session_state.data,
@@ -123,7 +123,7 @@ def show_import_page():
                         st.markdown("### Données après nettoyage")
                         st.dataframe(st.session_state.cleaned_data.head(), use_container_width=True)
 
-                        st.markdown("### 📝 Journal des Opérations de Nettoyage")
+                        st.markdown("###  Journal des Opérations de Nettoyage")
                         for msg in st.session_state.cleaning_log:
                             if "IMPORTANT" in msg or "AVERTISSEMENT" in msg:
                                 st.warning(msg)
@@ -163,7 +163,7 @@ def show_export_page():
     with col1:
         csv_data = st.session_state.cleaned_data.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📊 Télécharger les données nettoyées (CSV)",
+            label=" Télécharger les données nettoyées (CSV)",
             data=csv_data,
             file_name="donnees_nettoyees.csv",
             mime="text/csv",
@@ -172,7 +172,7 @@ def show_export_page():
    
     with col2:
     # Le type du bouton reste le même
-        if st.button("📋 Générer rapport PDF", use_container_width=True):
+        if st.button(" Générer rapport PDF", use_container_width=True):
             with st.spinner("Génération du rapport PDF..."):
                 
                 # --- MODIFICATION ICI ---
